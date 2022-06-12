@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- import font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+
+  <div class="container flex flex-col">
+    <div class="card accent flex space-between items-center">
+      <div class="title">
+        <p class="label">My Balance</p>
+        <h2 class="value h2">$921.48</h2>
+      </div>
+      <img src="./images/logo.svg" alt="Logo" class="logo">
+    </div>
+    <div class="card light flex flex-col space-even">
+      <h2 class="h2">Spending - Last 7 days</h2>
+      <ul class="chart flex" id="chart"></ul>
+      <hr class="hr">
+      <div class="summary flex space-between items-end">
+        <div class="total">
+          <p class="label">Total this month</p>
+          <h1 class="value h1">$478.33</h1>
+        </div>
+        <div class="comparison text-right">
+          <h5 class="value h5">+2.4%</h5>
+          <p class="label">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://vishalludhrani.github.io/vishalludhrani">Vishal Ludhrani</a>.
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
